@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">نتيجة التشذيب</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">اختر صورة</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">افتح لوحة التنقل</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">إغلاق لوحة التنقل</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">قطع</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">إستدر لليسار</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">إستدر لليمين</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">بدوره حولها</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">الوجه أفقيا</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">الوجه رأسيا</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">إعدادات انقطاع</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">دائري</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">مستطيلي</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">تراكب مخصص</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">إعدادات</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">%1s: مقياس الصورة</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">%1s: شكل قطع</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">%1s: أدلة</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">%1s: نسبة العرض إلى الارتفاع</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">%1s: التكبير التلقائي</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">%1s: الحد الأقصى لمستوى التكبير</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">تعيين طريقة لقطة</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">إعادة تعيين لقطة الشكل</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">%1s: إظهار اختيار الصورة</string>
+    <string name="drawer_option_toggle_show_progress_bar" tools:ignore="MissingTranslation">%1s: عرض التقدم</string>
+
+</resources>

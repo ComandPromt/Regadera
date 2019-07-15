@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Resultado del recorte</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Seleccionar imagen</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Abrir panel de navegación</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Cerrar panel de navegación</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">Recortar</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Girar a la izquierda</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Girar a la derecha</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Dar la vuelta</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Voltear horizontalmente</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Voltear verticalmente</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Ajustes Del Recorte</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circular</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rectangular</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Superposición Personalizada</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Ajustes</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Escala de la imagen: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Forma de corte: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Guías: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Relación de aspecto: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Zoom automático: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Máximo nivel de zoom: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Establecer forma de recorte</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Restablecer forma de recorte</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Mostrar selección de imagen: %1s</string>
+    <string name="drawer_option_toggle_show_progress_bar" tools:ignore="MissingTranslation">Mostrar progreso: %1s</string>
+
+</resources>
