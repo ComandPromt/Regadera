@@ -34,9 +34,27 @@ import com.example.croppersample.R;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
+import java.io.File;
+import java.util.LinkedList;
+
 public class MainActivity extends AppCompatActivity {
 
   // region: Fields and Consts
+
+
+
+
+  public static int paso=0;
+
+  static LinkedList<String> listaImagenes = new LinkedList<>();
+
+  public static LinkedList<String> getListaImagenes() {
+    return listaImagenes;
+  }
+
+  public static void setListaImagenes(LinkedList<String> listaImagenes) {
+    MainActivity.listaImagenes = listaImagenes;
+  }
 
   DrawerLayout mDrawerLayout;
 
@@ -58,8 +76,51 @@ public class MainActivity extends AppCompatActivity {
     updateDrawerTogglesByOptions(options);
   }
 
+  public void modo_multiple(MenuItem item) {
+
+      CropResultActivity.setMultiple(true);
+    }
+
+  public void modo_simple(MenuItem item) {
+
+    CropResultActivity.setMultiple(false);
+  }
+
+  public void resetear(MenuItem item) {
+    paso=0;
+  }
+
+  public static LinkedList<String> directorio(String ruta, String extension) {
+
+    LinkedList<String> lista = new LinkedList<>();
+
+    String directorio = ruta;
+
+    File f = new File(directorio);
+
+    if (f.exists()) {
+
+      File[] ficheros = f.listFiles();
+
+      for (int x = 0; x < ficheros.length; x++) {
+
+        String fichero = ficheros[x].getName();
+
+        if (extension.equals(".")
+                || (fichero.substring(fichero.length() - 3, fichero.length()).equals(extension))) {
+          lista.add(fichero);
+        }
+
+      }
+    }
+    return lista;
+  }
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+
+    listaImagenes= directorio("/mnt/sdcard/imagenes", ".");
+
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
@@ -106,11 +167,15 @@ public class MainActivity extends AppCompatActivity {
 
   @Override
   @SuppressLint("NewApi")
+
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
     super.onActivityResult(requestCode, resultCode, data);
+    Toast.makeText(this, "recorte", Toast.LENGTH_LONG).show();
 
     if (requestCode == CropImage.PICK_IMAGE_CHOOSER_REQUEST_CODE
         && resultCode == AppCompatActivity.RESULT_OK) {
+
       Uri imageUri = CropImage.getPickImageResultUri(this, data);
 
       // For API >= 23 we need to check specifically that we have permissions to read external
@@ -136,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   public void onRequestPermissionsResult(
       int requestCode, String permissions[], int[] grantResults) {
+
     if (requestCode == CropImage.CAMERA_CAPTURE_PERMISSIONS_REQUEST_CODE) {
       if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
         CropImage.startPickImageActivity(this);
@@ -144,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
             .show();
       }
     }
+
     if (requestCode == CropImage.PICK_IMAGE_PERMISSIONS_REQUEST_CODE) {
       if (mCropImageUri != null
           && grantResults.length > 0
@@ -154,11 +221,14 @@ public class MainActivity extends AppCompatActivity {
             .show();
       }
     }
+
   }
 
   @SuppressLint("NewApi")
   public void onDrawerOptionClicked(View view) {
+
     switch (view.getId()) {
+
       case R.id.drawer_option_load:
         if (CropImage.isExplicitCameraPermissionRequired(this)) {
           requestPermissions(
@@ -169,26 +239,22 @@ public class MainActivity extends AppCompatActivity {
         }
         mDrawerLayout.closeDrawers();
         break;
+
       case R.id.drawer_option_oval:
         setMainFragmentByPreset(CropDemoPreset.CIRCULAR);
         mDrawerLayout.closeDrawers();
         break;
+
       case R.id.drawer_option_rect:
         setMainFragmentByPreset(CropDemoPreset.RECT);
         mDrawerLayout.closeDrawers();
         break;
+
       case R.id.drawer_option_customized_overlay:
         setMainFragmentByPreset(CropDemoPreset.CUSTOMIZED_OVERLAY);
         mDrawerLayout.closeDrawers();
         break;
-      case R.id.drawer_option_min_max_override:
-        setMainFragmentByPreset(CropDemoPreset.MIN_MAX_OVERRIDE);
-        mDrawerLayout.closeDrawers();
-        break;
-      case R.id.drawer_option_scale_center:
-        setMainFragmentByPreset(CropDemoPreset.SCALE_CENTER_INSIDE);
-        mDrawerLayout.closeDrawers();
-        break;
+
       case R.id.drawer_option_toggle_scale:
         mCropImageViewOptions.scaleType =
             mCropImageViewOptions.scaleType == CropImageView.ScaleType.FIT_CENTER
@@ -201,6 +267,7 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_toggle_shape:
         mCropImageViewOptions.cropShape =
             mCropImageViewOptions.cropShape == CropImageView.CropShape.RECTANGLE
@@ -209,6 +276,7 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_toggle_guidelines:
         mCropImageViewOptions.guidelines =
             mCropImageViewOptions.guidelines == CropImageView.Guidelines.OFF
@@ -219,6 +287,7 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_toggle_aspect_ratio:
         if (!mCropImageViewOptions.fixAspectRatio) {
           mCropImageViewOptions.fixAspectRatio = true;
@@ -240,11 +309,13 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_toggle_auto_zoom:
         mCropImageViewOptions.autoZoomEnabled = !mCropImageViewOptions.autoZoomEnabled;
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_toggle_max_zoom:
         mCropImageViewOptions.maxZoomLevel =
             mCropImageViewOptions.maxZoomLevel == 4
@@ -253,10 +324,12 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
+
       case R.id.drawer_option_set_initial_crop_rect:
         mCurrentFragment.setInitialCropRect();
         mDrawerLayout.closeDrawers();
         break;
+
       case R.id.drawer_option_reset_crop_rect:
         mCurrentFragment.resetCropRect();
         mDrawerLayout.closeDrawers();
@@ -267,11 +340,7 @@ public class MainActivity extends AppCompatActivity {
         mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
         updateDrawerTogglesByOptions(mCropImageViewOptions);
         break;
-      case R.id.drawer_option_toggle_show_progress_bar:
-        mCropImageViewOptions.showProgressBar = !mCropImageViewOptions.showProgressBar;
-        mCurrentFragment.setCropImageViewOptions(mCropImageViewOptions);
-        updateDrawerTogglesByOptions(mCropImageViewOptions);
-        break;
+
       default:
         Toast.makeText(this, "Unknown drawer option clicked", Toast.LENGTH_LONG).show();
     }
@@ -310,13 +379,6 @@ public class MainActivity extends AppCompatActivity {
                     R.string.drawer_option_toggle_show_overlay,
                     Boolean.toString(options.showCropOverlay)));
 					
-    ((TextView) findViewById(R.id.drawer_option_toggle_show_progress_bar))
-        .setText(
-            getResources()
-                .getString(
-                    R.string.drawer_option_toggle_show_progress_bar,
-                    Boolean.toString(options.showProgressBar)));
-
     String aspectRatio = "FREE";
 	
     if (options.fixAspectRatio) {
@@ -336,4 +398,14 @@ public class MainActivity extends AppCompatActivity {
         .setText(
             getResources().getString(R.string.drawer_option_toggle_max_zoom, options.maxZoomLevel));
   }
+
+  public static int getPaso() {
+    return paso;
+  }
+
+  public static void setPaso(int paso) {
+    MainActivity.paso = paso;
+  }
+
+
 }

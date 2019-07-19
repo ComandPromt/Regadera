@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">gegen den Uhrzeigersinn drehen</string>
-    <string name="crop_image_menu_rotate_right">drehen</string>
-    <string name="crop_image_menu_crop">zuschneiden</string>
-    <string name="crop_image_menu_flip">spiegeln</string>
-    <string name="crop_image_menu_flip_horizontally">horizontal spiegeln</string>
-    <string name="crop_image_menu_flip_vertically">vertikal spiegeln</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="pick_image_intent_chooser_title">Quelle wählen</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Ergebnis des Zuschneidens</string>
 
-    <string name="crop_image_activity_no_permissions">Vorgang wird abgebrochen, benötigte Berechtigungen wurden nicht erteilt.</string>
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Bild auswählen</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Navigationsleiste öffnen</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Navigationsleiste schließen</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">Ausschneiden</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Biegen Sie links ab</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Biegen Sie rechts ab</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Dreh dich um</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Horizontal spiegeln</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Vertikal spiegeln</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Ausschnitt Einstellungen</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Rundschreiben</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rechteckig</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Benutzerdefinierte Überlagerung</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Einstellungen</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Maßstab des Bildes: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Form schneiden: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Guides: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Seitenverhältnis: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Automatischer Zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Maximale Zoomstufe: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Beschneidungspfad einstellen</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Schnittform zurücksetzen</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Bildauswahl anzeigen: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Modus</string>
 
 </resources>

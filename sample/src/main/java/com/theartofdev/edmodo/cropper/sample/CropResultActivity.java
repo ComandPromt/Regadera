@@ -45,6 +45,15 @@ public final class CropResultActivity extends Activity {
 
   private ImageView imageView;
 
+  public static boolean isMultiple() {
+    return multiple;
+  }
+
+  public static void setMultiple(boolean multiple) {
+    CropResultActivity.multiple = multiple;
+  }
+
+  public static boolean multiple=false;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 
@@ -60,8 +69,6 @@ public final class CropResultActivity extends Activity {
     if (mImage != null) {
 
       imageView.setImageBitmap(mImage);
-      int sampleSize = intent.getIntExtra("SAMPLE_SIZE", 1);
-      double ratio = ((int) (10 * mImage.getWidth() / (double) mImage.getHeight())) / 10d;
       int byteCount = 0;
 
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
@@ -73,24 +80,37 @@ public final class CropResultActivity extends Activity {
               + mImage.getWidth()
               + ", "
               + mImage.getHeight()
-              + "), Sample: "
-              + sampleSize
-              + ", Ratio: "
-              + ratio
-              + ", Bytes: "
+              + "), "
               + byteCount
-              + "K";
+              + "KB";
 
       ((TextView) findViewById(R.id.resultImageText)).setText(desc);
 
         Save savefile = new Save();
         savefile.SaveImage(this, mImage);
 
+if(multiple){
+
+    int paso=MainActivity.getPaso();
+
+    if(MainActivity.getListaImagenes().size()>0 && paso<MainActivity.getListaImagenes().size()) {
+
+      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+      MainActivity.listaImagenes.get(paso))));
+      MainActivity.setPaso(++paso);
+      Toast.makeText(this, "nuevo paso: "+MainActivity.getPaso(), Toast.LENGTH_SHORT).show();
+   }
+}
+
     } else {
+
       Uri imageUri = intent.getParcelableExtra("URI");
+
       if (imageUri != null) {
         imageView.setImageURI(imageUri);
-      } else {
+      }
+
+       else {
         Toast.makeText(this, "No image is set to show", Toast.LENGTH_LONG).show();
       }
     }
@@ -101,6 +121,7 @@ public final class CropResultActivity extends Activity {
     releaseBitmap();
     super.onBackPressed();
   }
+
 
   public void onImageViewClicked(View view) {
     releaseBitmap();

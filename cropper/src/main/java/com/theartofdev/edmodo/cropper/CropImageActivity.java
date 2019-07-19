@@ -43,7 +43,7 @@ public class CropImageActivity extends AppCompatActivity
         CropImageView.OnCropImageCompleteListener {
 
   /** The crop image view library widget used in the activity */
-  private CropImageView mCropImageView;
+  public static CropImageView mCropImageView;
 
   /** Persist URI image to crop URI if specific permissions are required */
   private Uri mCropImageUri;

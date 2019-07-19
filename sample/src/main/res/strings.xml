@@ -18,7 +18,6 @@
     <string name="drawer_option_oval">Circular</string>
     <string name="drawer_option_rect">Rectangular</string>
     <string name="drawer_option_customized_overlay">Customized Overlay</string>
-    <string name="drawer_option_scale_center">Scale Center Inside</string>
     <string name="drawer_option_title2">Customization Toggles</string>
     <string name="drawer_option_toggle_scale">Image Scale: %1s</string>
     <string name="drawer_option_toggle_shape">Crop Shape: %1s</string>
@@ -30,6 +29,6 @@
     <string name="drawer_option_reset_crop_rect">Reset crop rectangle to initial</string>
 
     <string name="drawer_option_toggle_show_overlay">Show Overlay: %1s</string>
-    <string name="drawer_option_toggle_show_progress_bar">Show Progress Bar: %1s</string>
+
 
 </resources>

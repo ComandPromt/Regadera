@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
@@ -31,6 +32,7 @@
     <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Establecer forma de recorte</string>
     <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Restablecer forma de recorte</string>
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Mostrar selección de imagen: %1s</string>
-    <string name="drawer_option_toggle_show_progress_bar" tools:ignore="MissingTranslation">Mostrar progreso: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Modo</string>
 
 </resources>

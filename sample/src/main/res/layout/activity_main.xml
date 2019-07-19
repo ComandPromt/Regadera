@@ -60,18 +60,6 @@
                 android:onClick="onDrawerOptionClicked"
                 android:text="@string/drawer_option_customized_overlay"/>
 
-            <TextView
-                android:id="@+id/drawer_option_min_max_override"
-                style="@style/Cropper.Widget.Drawer.Option.TextView"
-                android:onClick="onDrawerOptionClicked"
-                android:text="@string/drawer_option_min_max"/>
-
-            <TextView
-                android:id="@+id/drawer_option_scale_center"
-                style="@style/Cropper.Widget.Drawer.Option.TextView"
-                android:onClick="onDrawerOptionClicked"
-                android:text="@string/drawer_option_scale_center"/>
-
             <View style="@style/Cropper.Widget.Drawer.Seperator"/>
 
             <TextView
@@ -131,12 +119,6 @@
                 style="@style/Cropper.Widget.Drawer.Option.TextView"
                 android:onClick="onDrawerOptionClicked"
                 android:text="@string/drawer_option_toggle_show_overlay"/>
-
-            <TextView
-                android:id="@+id/drawer_option_toggle_show_progress_bar"
-                style="@style/Cropper.Widget.Drawer.Option.TextView"
-                android:onClick="onDrawerOptionClicked"
-                android:text="@string/drawer_option_toggle_show_progress_bar"/>
 
         </LinearLayout>
     </ScrollView>

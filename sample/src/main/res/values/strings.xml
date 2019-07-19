@@ -18,9 +18,7 @@
     <string name="drawer_option_title" tools:ignore="MissingTranslation">Crop View Presets</string>
     <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circular</string>
     <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rectangular</string>
-    <string name="drawer_option_min_max" tools:ignore="MissingTranslation">Min/Max limits override</string>
     <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Customized Overlay</string>
-    <string name="drawer_option_scale_center" tools:ignore="MissingTranslation">Scale Center Inside</string>
     <string name="drawer_option_title2" tools:ignore="MissingTranslation">Customization Toggles</string>
     <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Image Scale: %1s</string>
     <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Crop Shape: %1s</string>
@@ -32,6 +30,10 @@
     <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Reset crop rectangle to initial</string>
 
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Show Overlay: %1s</string>
-    <string name="drawer_option_toggle_show_progress_bar" tools:ignore="MissingTranslation">Show Progress Bar: %1s</string>
+
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Mode</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">Simple</string>
+    <string name="resetear" tools:ignore="MissingTranslation">Reset</string>
 
 </resources>

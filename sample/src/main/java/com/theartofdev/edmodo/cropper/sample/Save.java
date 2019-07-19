@@ -15,8 +15,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Save {
+
     private Context TheThis;
-    private String NameOfFolder = "";
+
+    private String NameOfFolder = "/recortes";
+
     private String NameOfFile = "";
  
     public void SaveImage(Context context, Bitmap ImageToSave) {

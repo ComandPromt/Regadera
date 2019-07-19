@@ -31,7 +31,11 @@ import android.widget.Toast;
 
 import com.example.croppersample.R;
 import com.theartofdev.edmodo.cropper.CropImage;
+import com.theartofdev.edmodo.cropper.CropImageActivity;
 import com.theartofdev.edmodo.cropper.CropImageView;
+
+import java.io.File;
+import java.util.LinkedList;
 
 /** The fragment that will show the Image Cropping UI by requested preset. */
 public final class MainFragment extends Fragment
@@ -42,11 +46,14 @@ public final class MainFragment extends Fragment
 
   private CropDemoPreset mDemoPreset;
 
-  private CropImageView mCropImageView;
+  public static CropImageView mCropImageView;
   // endregion
 
-  /** Returns a new instance of this fragment for the given section number. */
+
+    /** Returns a new instance of this fragment for the given section number. */
   public static MainFragment newInstance(CropDemoPreset demoPreset) {
+
+
     MainFragment fragment = new MainFragment();
     Bundle args = new Bundle();
     args.putString("DEMO_PRESET", demoPreset.name());
@@ -182,11 +189,6 @@ public final class MainFragment extends Fragment
 
   }
 
-
-
-
-
-
   @Override
   public void onAttach(Context context) {
     super.onAttach(context);
@@ -232,16 +234,23 @@ public final class MainFragment extends Fragment
   }
 
   private void handleCropResult(CropImageView.CropResult result) {
+
     if (result.getError() == null) {
+
       Intent intent = new Intent(getActivity(), CropResultActivity.class);
       intent.putExtra("SAMPLE_SIZE", result.getSampleSize());
+
       if (result.getUri() != null) {
         intent.putExtra("URI", result.getUri());
-      } else {
+      }
+
+      else {
+
         CropResultActivity.mImage =
                 mCropImageView.getCropShape() == CropImageView.CropShape.OVAL
                         ? CropImage.toOvalBitmap(result.getBitmap())
                         : result.getBitmap();
+
       }
       startActivity(intent);
     } else {
@@ -253,4 +262,5 @@ public final class MainFragment extends Fragment
               .show();
     }
   }
+
 }
