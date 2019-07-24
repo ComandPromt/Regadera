@@ -80,7 +80,7 @@ public final class CropResultActivity extends Activity {
               + mImage.getWidth()
               + ", "
               + mImage.getHeight()
-              + "), "
+              + ") "
               + byteCount
               + "KB";
 
@@ -98,7 +98,7 @@ if(multiple){
       MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
       MainActivity.listaImagenes.get(paso))));
       MainActivity.setPaso(++paso);
-      Toast.makeText(this, "nuevo paso: "+MainActivity.getPaso(), Toast.LENGTH_SHORT).show();
+
    }
 }
 
