@@ -149,10 +149,23 @@ public final class MainFragment extends Fragment
     updateCurrentCropViewOptions();
 
     if (savedInstanceState == null) {
+
       if (mDemoPreset == CropDemoPreset.SCALE_CENTER_INSIDE) {
         mCropImageView.setImageResource(R.drawable.cat_small);
-      } else {
-        mCropImageView.setImageResource(R.drawable.cat);
+      }
+
+      else {
+
+        if(MainActivity.getListaImagenes().size()>0){
+
+          MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+                  MainActivity.getListaImagenes().get(0))));
+        }
+
+        else{
+          mCropImageView.setImageResource(R.drawable.cat);
+        }
+
       }
     }
   }
@@ -201,18 +214,21 @@ public final class MainFragment extends Fragment
 
   @Override
   public void onDetach() {
+
     super.onDetach();
+
     if (mCropImageView != null) {
       mCropImageView.setOnSetImageUriCompleteListener(null);
       mCropImageView.setOnCropImageCompleteListener(null);
     }
+
   }
 
   @Override
   public void onSetImageUriComplete(CropImageView view, Uri uri, Exception error) {
 
     if (error != null) {
-
+      MainActivity.setPaso(MainActivity.getPaso()+1);
       Log.e("AIC", "Failed to load image by URI", error);
       Toast.makeText(getActivity(), "Image load failed: " + error.getMessage(), Toast.LENGTH_LONG)
               .show();

@@ -1,16 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Roter teller med urviseren</string>
-    <string name="crop_image_menu_rotate_right">Roter</string>
-    <string name="crop_image_menu_crop">Beskjær</string>
-    <string name="crop_image_menu_flip">Vend</string>
-    <string name="crop_image_menu_flip_horizontally">Vend vannrett</string>
-    <string name="crop_image_menu_flip_vertically">Vend loddrett</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="pick_image_intent_chooser_title">Velg kilde</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Trimming resultat</string>
 
-    <string name="crop_image_activity_no_permissions">Avbryter, nødvendige tillatelser er ikke gitt</string>
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Velg bilde</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Åpne navigasjonspanelet</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Lukk navigasjonspanelet</string>
 
+    <string name="main_action_crop" tools:ignore="MissingTranslation">Trim</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Sving til venstre</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Sving til høyre</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Gå rundt</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Vend horisontalt</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Vend loddrett</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Triminnstillinger</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">sirkulær</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">rektangulære</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Tilpasset overlegg</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">innstillinger</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Bildeskala: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Skjærende form: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">guider: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Bildeforhold: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Auto zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Zoom nivå: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Sett klippeform</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Tilbakestill klippeformen</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Vis valg av bilde: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Modus</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">Enkel</string>
 </resources>

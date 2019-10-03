@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Obróć w lewo</string>
-    <string name="crop_image_menu_rotate_right">Obróć</string>
-    <string name="crop_image_menu_crop">Przytnij</string>
-    <string name="crop_image_menu_flip">Odbij</string>
-    <string name="crop_image_menu_flip_horizontally">Odbij poziomo</string>
-    <string name="crop_image_menu_flip_vertically">Odbij pionowo</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="pick_image_intent_chooser_title">Wybierz źródło</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Wynik przycinania</string>
 
-    <string name="crop_image_activity_no_permissions">Przerywaniem, potrzebne uprawnienia nie zostały nadane</string>
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Wybierz obraz</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Otwórz panel nawigacyjny</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Zamknij panel nawigacyjny</string>
 
+    <string name="main_action_crop" tools:ignore="MissingTranslation">Przytnij</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Skręć w lewo</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Skręć w prawo</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Odwróć się</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Odwróć w poziomie</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Odwróć w pionie</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Ustawienia przycinania</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Okrągły</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Prostokątny</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Nakładka niestandardowa</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Ustawienia</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Skala obrazu: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Kształt cięcia: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Przewodniki: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Współczynnik kształtu: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Auto zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Poziom powiększenia: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Ustaw kształt obcinania</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Zresetuj kształt obcinania</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Pokaż wybór obrazu: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Wiele</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Tryb</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">Proste</string>
 </resources>

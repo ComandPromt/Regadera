@@ -35,5 +35,6 @@
     <string name="main_action_modo" tools:ignore="MissingTranslation">Mode</string>
     <string name="modo_simple" tools:ignore="MissingTranslation">Simple</string>
     <string name="resetear" tools:ignore="MissingTranslation">Reset</string>
+    <string name="b_n">B/N</string>
 
 </resources>

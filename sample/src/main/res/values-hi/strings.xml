@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="crop_image_menu_rotate_left">घड़ी की सुई के विपरीत दिशा में घुमाइए</string>
-    <string name="crop_image_menu_rotate_right">घुमाएँ</string>
-    <string name="crop_image_menu_crop">फ़सल</string>
-    <string name="crop_image_menu_flip">फ्लिप</string>
-    <string name="crop_image_menu_flip_horizontally">क्षैतिज फ्लिप</string>
-    <string name="crop_image_menu_flip_vertically">लंबवत फ्लिप करें</string>
-    <string name="pick_image_intent_chooser_title">सोर्स चुनें</string>
-    <string name="crop_image_activity_no_permissions">रद्द करना, आवश्यक अनुमतियां नहीं दी गई हैं</string>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">ट्रिमिंग का परिणाम</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">छवि का चयन करें</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">नेविगेशन पैनल खोलें</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">नेविगेशन पैनल बंद करें</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">ट्रिम</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">बाएं मुड़ें</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">दाएं मुड़ें</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">चारों ओर जाओ</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">क्षैतिज रूप से पलटें</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">लंबवत पलटें</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">ट्रिम सेटिंग्स</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">परिपत्र</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">आयताकार</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">कस्टम ओवरले</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">सेटिंग्स</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">छवि पैमाना: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">काटने का आकार: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">गाइड: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">पहलू अनुपात: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">ऑटो जूम: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">ज़ूम स्तर: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">कतरन आकार सेट करें</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">क्लिपिंग आकार रीसेट करें</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">छवि चयन दिखाएं: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">विभिन्न</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">मोड</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">सरल</string>
 </resources>

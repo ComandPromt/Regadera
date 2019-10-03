@@ -1,16 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Tegen de klok in draaien</string>
-    <string name="crop_image_menu_rotate_right">Draaien</string>
-    <string name="crop_image_menu_crop">Bijsnijden</string>
-    <string name="crop_image_menu_flip">Spiegelen</string>
-    <string name="crop_image_menu_flip_horizontally">Horizontaal spiegelen</string>
-    <string name="crop_image_menu_flip_vertically">Verticaal spiegelen</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="pick_image_intent_chooser_title">Bron selecteren</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Trimresultaat</string>
 
-    <string name="crop_image_activity_no_permissions">Wordt geannuleerd, vereiste machtigingen zijn niet toegekend</string>
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Selecteer afbeelding</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Open navigatiepaneel</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Sluit het navigatiepaneel</string>
 
+    <string name="main_action_crop" tools:ignore="MissingTranslation">trimmen</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Sla linksaf</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Sla rechtsaf</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Ga rond</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Horizontaal spiegelen</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Horizontaal spiegelen</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Trim instellingen</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circulaire</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rechthoekig</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Aangepaste overlay</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">instellingen</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Afbeelding schaal: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Snijden vorm: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Gidsen: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Beeldverhouding: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Auto zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Zoomniveau: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Knipvorm instellen</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Knipvorm opnieuw instellen</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Toon afbeelding selectie: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Meervoudig</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Mode</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">Eenvoudig</string>
 </resources>

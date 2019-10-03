@@ -1,16 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Ruota in senso antiorario</string>
-    <string name="crop_image_menu_rotate_right">Ruota</string>
-    <string name="crop_image_menu_crop">Ritaglia</string>
-    <string name="crop_image_menu_flip">Capovolgi</string>
-    <string name="crop_image_menu_flip_horizontally">Capovolgi orizzontalmente</string>
-    <string name="crop_image_menu_flip_vertically">Capovolgi verticalmente</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="pick_image_intent_chooser_title">Seleziona origine</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Risultato del taglio</string>
 
-    <string name="crop_image_activity_no_permissions">Annullamento in corso, autorizzazione richieste non concesse</string>
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Seleziona immagine</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Apri il pannello di navigazione</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Chiudi il pannello di navigazione</string>
 
+    <string name="main_action_crop" tools:ignore="MissingTranslation">tagliare</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Gira a sinistra</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Girare a destra</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Andare in giro</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Capovolgi orizzontalmente</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Capovolgi verticalmente</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Impostazioni di ritaglio</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circolare</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rettangolare</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Overlay personalizzato</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">impostazioni</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Scala del la immagine: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Forma di taglio: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Guide: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Proporzioni: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Zoom automatico: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Livello di zoom: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Imposta la forma di ritaglio</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Ripristina la forma di ritaglio</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Mostra la selezione del la immagine: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiplo</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Modo</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">Semplice</string>
 </resources>
+

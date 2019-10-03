@@ -34,5 +34,5 @@
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Bildauswahl anzeigen: %1s</string>
     <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
     <string name="main_action_modo" tools:ignore="MissingTranslation">Modus</string>
-
+    <string name="modo_simple" tools:ignore="MissingTranslation">Einfach</string>
 </resources>

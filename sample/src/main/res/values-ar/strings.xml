@@ -32,5 +32,6 @@
     <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">إعادة تعيين لقطة الشكل</string>
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">%1s: إظهار اختيار الصورة</string>
     <string name="modo_multiple" tools:ignore="MissingTranslation">مضاعف</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">بسيط</string>
     <string name="main_action_modo" tools:ignore="MissingTranslation">طريقة</string>
 </resources>

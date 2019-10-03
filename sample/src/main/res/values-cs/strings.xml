@@ -34,5 +34,5 @@
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Zobrazit výběr obrázku: %1s</string>
     <string name="modo_multiple" tools:ignore="MissingTranslation">Více</string>
     <string name="main_action_modo" tools:ignore="MissingTranslation">Režim</string>
-
+    <string name="modo_simple" tools:ignore="MissingTranslation">Jednoduché</string>
 </resources>

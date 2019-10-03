@@ -45,15 +45,17 @@ public final class CropResultActivity extends Activity {
 
   private ImageView imageView;
 
-  public static boolean isMultiple() {
+  public static boolean multiple=false;
+  
+    public static boolean isMultiple() {
     return multiple;
   }
 
   public static void setMultiple(boolean multiple) {
     CropResultActivity.multiple = multiple;
   }
-
-  public static boolean multiple=false;
+  
+  
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 
@@ -97,6 +99,7 @@ if(multiple){
 
       MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
       MainActivity.listaImagenes.get(paso))));
+	  
       MainActivity.setPaso(++paso);
 
    }
@@ -111,6 +114,7 @@ if(multiple){
       }
 
        else {
+        MainActivity.setPaso(MainActivity.getPaso()+1);
         Toast.makeText(this, "No image is set to show", Toast.LENGTH_LONG).show();
       }
     }

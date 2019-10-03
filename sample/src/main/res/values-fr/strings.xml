@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Pivoter à gauche</string>
-    <string name="crop_image_menu_rotate_right">Pivoter à droite</string>
-    <string name="crop_image_menu_crop">Redimensionner</string>
-    <string name="crop_image_menu_flip">Retourner</string>
-    <string name="crop_image_menu_flip_horizontally">Retourner horizontalement</string>
-    <string name="crop_image_menu_flip_vertically">Retourner verticalement</string>
-    <string name="pick_image_intent_chooser_title">Sélectionner la source</string>
-    <string name="crop_image_activity_no_permissions">Annulation, il manque des permissions requises</string>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">Résultat de coupe</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Sélectionnez une image</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Ouvrir le panneau de navigation</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Fermer le panneau de navigation</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">Récolte</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Tourner à gauche</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Tourner à droite</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">Retourner</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Flip horizontalement</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Flip verticalement</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Paramètres de rognage</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circulaire</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rectangulaire</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Superposition personnalisée</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Paramètres</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Échelle de image: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Forme de coupe: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Guides: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Ratio de aspect: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Zoom automatique: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Niveau de zoom: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Définir la forme de coupure</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Réinitialiser la forme de découpage</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Afficher la sélection de images: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Mode</string>
 </resources>

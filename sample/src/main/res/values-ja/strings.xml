@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="crop_image_menu_rotate_left">左回転</string>
-    <string name="crop_image_menu_rotate_right">右回転</string>
-    <string name="crop_image_menu_crop">切り取り</string>
-    <string name="crop_image_menu_flip">反転</string>
-    <string name="crop_image_menu_flip_horizontally">左右反転</string>
-    <string name="crop_image_menu_flip_vertically">上下反転</string>
-    <string name="pick_image_intent_chooser_title">画像を選択</string>
-    <string name="crop_image_activity_no_permissions">必要な権限がありません、キャンセルしています。</string>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+    <string name="result_image_desc" tools:ignore="MissingTranslation">トリミング結果</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">画像を選択</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">ナビゲーションパネルを開く</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">ナビゲーションパネルを閉じる</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">切り抜き</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">左に曲がる</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">右に曲がる</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">歩き回る</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">水平に反転</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">上下反転</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">トリム設定</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">円形</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">長方形</string>
+
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">カスタムオーバーレイ</string>
+
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">設定</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">画像スケール: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">切断形状: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">ガイド: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">アスペクト比: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">オートズーム: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">ズームレベル: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">クリッピング形状を設定</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">クリッピング形状をリセット</string>
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">画像選択を表示: %1s</string>
+    <string name="modo_multiple" tools:ignore="MissingTranslation">複数</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">モード</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">単純な</string>
 </resources>
