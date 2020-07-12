@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="crop_image_menu_rotate_left">Saat yönünde döndür</string>
-    <string name="crop_image_menu_rotate_right">döndürmek</string>
-    <string name="crop_image_menu_crop">ekin</string>
-    <string name="crop_image_menu_flip">fiske</string>
-    <string name="crop_image_menu_flip_horizontally">Yatay olarak çevir</string>
-    <string name="crop_image_menu_flip_vertically">Dikey olarak çevir</string>
-    <string name="pick_image_intent_chooser_title">Kaynağı seçin</string>
-    <string name="crop_image_activity_no_permissions">İptal ediliyor, gerekli izinler verilmiyor</string>
+
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >kırpma sonucu</string>
+
+    <string name="main_drawer_load" >Kırpma için Resim Yükle</string>
+    <string name="main_drawer_open" >Gezinme çekmecesini aç</string>
+    <string name="main_drawer_close" >Gezinme çekmecesini kapat</string>
+
+    <string name="main_action_crop" >KIRP</string>
+    <string name="main_action_rotate_left" >Sola Döndür</string>
+    <string name="main_action_rotate" >Sağa Döndür</string>
+    <string name="main_action_flip" >fiske</string>
+    <string name="main_action_flip_horizontally" >Yatay olarak çevir</string>
+    <string name="main_action_flip_vertically" >Dikey olarak çevir</string>
+    <string name="drawer_option_title" >Görünüm Ön Ayarlarını Kırp</string>
+    <string name="drawer_option_oval" >dairesel</string>
+    <string name="drawer_option_rect" >dikdörtgen biçiminde</string>
+    <string name="drawer_option_customized_overlay" >Özelleştirilmiş Kaplama</string>
+    <string name="drawer_option_title2" >Özelleştirme Değiştirir</string>
+    <string name="drawer_option_toggle_scale" >Görüntü Ölçeği: %1s</string>
+    <string name="drawer_option_toggle_shape" >Kırpma Şekli: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >Kuralları: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >En Boy Oranı: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >Otomatik zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >Maksimum zoom seviyesi: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >İlk kırpma dikdörtgenini ayarla</string>
+    <string name="drawer_option_reset_crop_rect" >Kırpma dikdörtgenini başa sıfırla</string>
+
+    <string name="drawer_option_toggle_show_overlay" >Yer Paylaşımını Göster: %1s</string>
+
+    <string name="modo_multiple" >çoklu</string>
+    <string name="main_action_modo" >kip</string>
+    <string name="modo_simple" >Basit</string>
 
 </resources>

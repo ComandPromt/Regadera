@@ -3,7 +3,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
-    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+
     <string name="result_image_desc" tools:ignore="MissingTranslation">Resultado del recorte</string>
 
     <string name="main_drawer_load" tools:ignore="MissingTranslation">Seleccionar imagen</string>
@@ -34,5 +34,5 @@
     <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Mostrar selección de imagen: %1s</string>
     <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
     <string name="main_action_modo" tools:ignore="MissingTranslation">Modo</string>
-
+    <string name="modo_simple" >Simple</string>
 </resources>

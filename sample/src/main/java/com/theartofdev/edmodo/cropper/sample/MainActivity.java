@@ -11,6 +11,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Environment;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,9 +28,12 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.channels.FileChannel;
+import java.sql.SQLOutput;
 import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
+
+  public static String directorioImagenes= Environment.getExternalStorageDirectory().getAbsolutePath()+"/Regadera/imagenes";
 
   DrawerLayout mDrawerLayout;
 
@@ -82,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     CropResultActivity.setMultiple(false);
 
-    MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+    MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(directorioImagenes+"/" +
             listaImagenes.get(paso))));
 
   }
@@ -95,13 +100,10 @@ public class MainActivity extends AppCompatActivity {
 
       }
 
-      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(directorioImagenes+"/" +
               listaImagenes.get(--paso))));
 
       posicion = ++paso;
-
-      Toast.makeText(this, "(" + posicion + " / " + listaImagenes.size() + ")", Toast.LENGTH_SHORT)
-              .show();
 
       --paso;
     }
@@ -120,13 +122,12 @@ public class MainActivity extends AppCompatActivity {
 
       }
 
-      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(directorioImagenes+"/" +
               listaImagenes.get(++paso))));
 
       posicion = ++paso;
 
-      Toast.makeText(this, "(" + posicion + " / " + listaImagenes.size() + ")", Toast.LENGTH_LONG)
-              .show();
+
 
       --paso;
     }
@@ -180,42 +181,6 @@ public class MainActivity extends AppCompatActivity {
 
   }
 
-  public void bn(MenuItem item) throws IOException {
-
-try {
-
-  File f1 = new File("/mnt/sdcard/imagenes/" + listaImagenes.get(paso));
-
-  File f2 = new File("/mnt/sdcard/imagenes/bn/" + listaImagenes.get(paso));
-
-  copyFile(f1, f2);
-
-  listaImagenes.clear();
-
-  listaImagenes = directorio("/mnt/sdcard/imagenes", ".");
-
-  if (listaImagenes.size() == 0) {
-    MainFragment.mCropImageView.setImageResource(R.drawable.cat);
-  }
-
-  else {
-
-    if (listaImagenes.size() == 1) {
-      paso = 0;
-    }
-
-    MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
-            listaImagenes.get(paso))));
-  }
-
-}
-
-catch (Exception e){
-
-}
-
-  }
-
   public static void renombrar(String ruta1, String ruta2) {
 
     File f1 = new File(ruta1);
@@ -255,6 +220,30 @@ catch (Exception e){
 
     return cadena;
 
+  }
+
+  public static void conversion(String extension, String salida, String carpeta) {
+
+    LinkedList<String> listaImagenes = directorio(carpeta, extension);
+
+    int resto = 3;
+
+    if (extension.length() == 4) {
+      resto = 5;
+    }
+
+    for (int i = 0; i < listaImagenes.size(); i++) {
+
+      File f1 = new File(carpeta + "/" + listaImagenes.get(i));
+
+      File f2 = new File(carpeta + "/"
+              + listaImagenes.get(i).substring(0, listaImagenes.get(i).length() - resto) + "." + salida);
+
+      f1.renameTo(f2);
+
+    }
+
+    listaImagenes.clear();
   }
 
   public static LinkedList<String> directorio(String ruta, String extension) {
@@ -312,11 +301,17 @@ catch (Exception e){
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 
-    crearCarpeta("/mnt/sdcard/imagenes");
+    paso=0;
 
-    crearCarpeta("/mnt/sdcard/imagenes/bn");
+    posicion=1;
 
-    listaImagenes= directorio("/mnt/sdcard/imagenes", ".");
+    crearCarpeta(directorioImagenes);
+
+    crearCarpeta("/storage/emulated/0/Regadera/recortes");
+
+    conversion("jpeg","jpg",directorioImagenes);
+
+   listaImagenes= directorio(directorioImagenes, ".");
 
     super.onCreate(savedInstanceState);
 
@@ -340,14 +335,16 @@ catch (Exception e){
       setMainFragmentByPreset(CropDemoPreset.RECT);
     }
 
+
+
   }
 
   private void crearCarpeta(String ruta) {
 
-    File carpeta = new File(ruta);
+    File dir = new File(ruta);
 
-    if (!carpeta.exists()) {
-      carpeta.mkdir();
+    if (!dir.exists()) {
+      dir.mkdirs();
     }
 
   }
@@ -666,11 +663,46 @@ catch (Exception e){
   }
 
   public static int getPaso() {
+
     return paso;
+
   }
 
   public static void setPaso(int paso) {
+
     MainActivity.paso = paso;
+
+  }
+
+  public void primeraImagen(MenuItem item) {
+
+    paso=0;
+
+    posicion=1;
+
+    MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(directorioImagenes+"/" +
+            listaImagenes.get(0))));
+
+  }
+
+  public void ultimaImagen(MenuItem item) {
+
+    int hasta=listaImagenes.size();
+
+    posicion=hasta;
+
+    hasta-=1;
+
+    paso=hasta;
+
+    MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(directorioImagenes+"/" +
+            listaImagenes.get(hasta))));
+
+  }
+
+  public void verProgreso(MenuItem item) {
+    Toast.makeText(this, "(" + posicion + " / " + listaImagenes.size() + ")", Toast.LENGTH_SHORT)
+            .show();
   }
 
 }

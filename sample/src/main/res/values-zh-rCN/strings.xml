@@ -1,16 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <resources>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">逆时针旋转</string>
-    <string name="crop_image_menu_rotate_right">旋转</string>
-    <string name="crop_image_menu_crop">裁切</string>
-    <string name="crop_image_menu_flip">翻转</string>
-    <string name="crop_image_menu_flip_horizontally">水平翻转</string>
-    <string name="crop_image_menu_flip_vertically">垂直翻转</string>
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >作物結果</string>
 
-    <string name="pick_image_intent_chooser_title">选择来源</string>
+    <string name="main_drawer_load" >加載圖像進行裁剪</string>
+    <string name="main_drawer_open" >打開導航抽屜</string>
+    <string name="main_drawer_close" >關閉導航抽屜</string>
 
-    <string name="crop_image_activity_no_permissions">取消中，未授予所需权限</string>
+    <string name="main_action_crop" >作物</string>
+    <string name="main_action_rotate_left" >向左旋轉</string>
+    <string name="main_action_rotate" >向右旋轉</string>
+    <string name="main_action_flip" >翻轉</string>
+    <string name="main_action_flip_horizontally" >水平翻轉</string>
+    <string name="main_action_flip_vertically" >垂直翻轉</string>
+    <string name="drawer_option_title" >裁剪視圖預設</string>
+    <string name="drawer_option_oval" >圓</string>
+    <string name="drawer_option_rect" >長方形</string>
+    <string name="drawer_option_customized_overlay" >定制疊加</string>
+    <string name="drawer_option_title2" >定制切換</string>
+    <string name="drawer_option_toggle_scale" >影像比例: %1s</string>
+    <string name="drawer_option_toggle_shape" >作物形狀: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >指導方針: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >長寬比: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >自動變焦: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >最大縮放等級: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >設置初始裁剪矩形</string>
+    <string name="drawer_option_reset_crop_rect" >將裁剪矩形重置為初始矩形</string>
+
+    <string name="drawer_option_toggle_show_overlay" >顯示疊加: %1s</string>
+
+    <string name="modo_multiple" >多</string>
+    <string name="main_action_modo" >模式</string>
+    <string name="modo_simple" >簡單</string>
 
 </resources>

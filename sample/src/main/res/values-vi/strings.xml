@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Xoay theo chiều kim đồng hồ</string>
-    <string name="crop_image_menu_rotate_right">Xoay</string>
-    <string name="crop_image_menu_crop">Cắt</string>
-    <string name="crop_image_menu_flip">Lật</string>
-    <string name="crop_image_menu_flip_horizontally">Lật theo chiều ngang</string>
-    <string name="crop_image_menu_flip_vertically">Lật theo chiều dọc</string>
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >kết quả mùa vụ</string>
 
-    <string name="pick_image_intent_chooser_title">Chọn nguồn</string>
+    <string name="main_drawer_load" >Tải hình ảnh để cắt</string>
+    <string name="main_drawer_open" >Mở ngăn kéo điều hướng</string>
+    <string name="main_drawer_close" >Đóng ngăn điều hướng</string>
 
-    <string name="crop_image_activity_no_permissions">Đang hủy, các quyền đã yêu cầu không được cấp</string>
+    <string name="main_action_crop" >MÙA VỤ</string>
+    <string name="main_action_rotate_left" >Xoay trái</string>
+    <string name="main_action_rotate" >Xoay phải</string>
+    <string name="main_action_flip" >Lật</string>
+    <string name="main_action_flip_horizontally" >Lật ngangy</string>
+    <string name="main_action_flip_vertically" >Lật theo chiều dọc</string>
+    <string name="drawer_option_title" >Cài đặt cắt xén</string>
+    <string name="drawer_option_oval" >Dạng hình tròn</string>
+    <string name="drawer_option_rect" >Hình hộp chữ nhật</string>
+    <string name="drawer_option_customized_overlay" >Lớp phủ tùy chỉnh</string>
+    <string name="drawer_option_title2" >Kính tùy biến</string>
+    <string name="drawer_option_toggle_scale" >Tỷ lệ hình ảnh: %1s</string>
+    <string name="drawer_option_toggle_shape" >Hình dạng cây trồng: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >Hướng dẫn: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >Tỷ lệ khung hình: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >Tự động thu phóng: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >Mức thu phóng tối đa: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >Đặt hình chữ nhật cắt ban đầu</string>
+    <string name="drawer_option_reset_crop_rect" >Đặt lại hình chữ nhật crop thành ban đầu</string>
+
+    <string name="drawer_option_toggle_show_overlay" >Hiển thị lớp phủ: %1s</string>
+
+    <string name="modo_multiple" >Nhiều</string>
+    <string name="main_action_modo" >Chế độ</string>
+    <string name="modo_simple" >Đơn giản</string>
 
 </resources>

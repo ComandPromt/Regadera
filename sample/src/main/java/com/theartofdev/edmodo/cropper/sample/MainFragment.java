@@ -50,7 +50,7 @@ public final class MainFragment extends Fragment
   // endregion
 
 
-    /** Returns a new instance of this fragment for the given section number. */
+  /** Returns a new instance of this fragment for the given section number. */
   public static MainFragment newInstance(CropDemoPreset demoPreset) {
 
 
@@ -62,10 +62,27 @@ public final class MainFragment extends Fragment
   }
 
   /** Set the image to show for cropping. */
+
   public void setImageUri(Uri imageUri) {
+
     mCropImageView.setImageUriAsync(imageUri);
-    //        CropImage.activity(imageUri)
-    //                .start(getContext(), this);
+
+    String directorio=imageUri.toString();
+
+    directorio=directorio.substring(0,directorio.lastIndexOf("/"));
+
+    if(directorio.contains("external_storage")){
+      directorio="/storage/emulated/0/"+directorio.substring(directorio.indexOf("external_storage")+17,directorio.length());
+    }
+
+    MainActivity.directorioImagenes=directorio;
+
+    MainActivity.conversion("jpeg", "jpg", directorio);
+
+    MainActivity.listaImagenes.clear();
+
+    MainActivity.listaImagenes= MainActivity.directorio(directorio, ".");
+
   }
 
   /** Set the options of the crop image view to the given values. */
@@ -158,7 +175,7 @@ public final class MainFragment extends Fragment
 
         if(MainActivity.getListaImagenes().size()>0){
 
-          MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+          MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(MainActivity.directorioImagenes +"/"+
                   MainActivity.getListaImagenes().get(0))));
         }
 

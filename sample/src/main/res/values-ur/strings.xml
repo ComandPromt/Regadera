@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="crop_image_menu_rotate_left">گھڑی وار گھڑی گھومیں</string>
-    <string name="crop_image_menu_rotate_right">گھمائیں</string>
-    <string name="crop_image_menu_crop">فصل</string>
-    <string name="crop_image_menu_flip">پلٹائیں</string>
-    <string name="crop_image_menu_flip_horizontally">افقی پلٹائیں</string>
-    <string name="crop_image_menu_flip_vertically">عمودی طور پر پلٹائیں</string>
-    <string name="pick_image_intent_chooser_title">ذریعہ منتخب کریں</string>
-    <string name="crop_image_activity_no_permissions">منسوخ کرنا، ضروری اجازت نہیں دی جاتی ہیں</string>
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >فصل کا نتیجہ</string>
+
+    <string name="main_drawer_load" >کھیتی کے ل Image امیج لوڈ کریں</string>
+    <string name="main_drawer_open" >نیویگیشن دراز کھولیں</string>
+    <string name="main_drawer_close" >نیویگیشن دراز کو بند کریں</string>
+
+    <string name="main_action_crop" >کروپ</string>
+    <string name="main_action_rotate_left" >بائیں گھمائیں</string>
+    <string name="main_action_rotate" >دائیں گھمائیں</string>
+    <string name="main_action_flip" >پلٹائیں</string>
+    <string name="main_action_flip_horizontally" >افقی طور پر پلٹائیں</string>
+    <string name="main_action_flip_vertically" >عمودی پلٹائیں</string>
+    <string name="drawer_option_title" >فصل پیش نظارہ دیکھیں</string>
+    <string name="drawer_option_oval" >سرکلر</string>
+    <string name="drawer_option_rect" >آئتاکار</string>
+    <string name="drawer_option_customized_overlay" >اپنی مرضی کے مطابق اتبشایی</string>
+    <string name="drawer_option_title2" >حسب ضرورت ٹوگلز</string>
+    <string name="drawer_option_toggle_scale" >تصویری اسکیل: %1s</string>
+    <string name="drawer_option_toggle_shape" >فصل کی شکل: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >ہدایات: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >پہلو کا تناسب: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >آٹو زوم: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >زیادہ سے زیادہ زوم کی سطح: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >ابتدائی فصل مستطیل سیٹ کریں</string>
+    <string name="drawer_option_reset_crop_rect" >ابتدائی میں فصل مستطیل ری سیٹ کریں</string>
+
+    <string name="drawer_option_toggle_show_overlay" >چڑھائیں دکھائیں: %1s</string>
+
+    <string name="modo_multiple" >متعدد</string>
+    <string name="main_action_modo" >وضع</string>
+    <string name="modo_simple" >آسان</string>
 
 </resources>

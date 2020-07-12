@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
-    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
-    <string name="result_image_desc" tools:ignore="MissingTranslation">crop result</string>
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >crop result</string>
 
-    <string name="main_drawer_load" tools:ignore="MissingTranslation">Load Image for cropping</string>
-    <string name="main_drawer_open" tools:ignore="MissingTranslation">Open navigation drawer</string>
-    <string name="main_drawer_close" tools:ignore="MissingTranslation">Close navigation drawer</string>
+    <string name="main_drawer_load" >Load Image for cropping</string>
+    <string name="main_drawer_open" >Open navigation drawer</string>
+    <string name="main_drawer_close" >Close navigation drawer</string>
 
-    <string name="main_action_crop" tools:ignore="MissingTranslation">CROP</string>
-    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Left Rotate</string>
-    <string name="main_action_rotate" tools:ignore="MissingTranslation">Right Rotate</string>
-    <string name="main_action_flip" tools:ignore="MissingTranslation">Flip</string>
-    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Flip horizontally</string>
-    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Flip vertically</string>
-    <string name="drawer_option_title" tools:ignore="MissingTranslation">Crop View Presets</string>
-    <string name="drawer_option_oval" tools:ignore="MissingTranslation">Circular</string>
-    <string name="drawer_option_rect" tools:ignore="MissingTranslation">Rectangular</string>
-    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Customized Overlay</string>
-    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Customization Toggles</string>
-    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Image Scale: %1s</string>
-    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Crop Shape: %1s</string>
-    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Guidelines: %1s</string>
-    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Aspect Ratio: %1s</string>
-    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Auto zoom: %1s</string>
-    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Max zoom level: %1s</string>
-    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Set initial crop rectangle</string>
-    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Reset crop rectangle to initial</string>
+    <string name="main_action_crop" >CROP</string>
+    <string name="main_action_rotate_left" >Left Rotate</string>
+    <string name="main_action_rotate" >Right Rotate</string>
+    <string name="main_action_flip" >Flip</string>
+    <string name="main_action_flip_horizontally" >Flip horizontally</string>
+    <string name="main_action_flip_vertically" >Flip vertically</string>
+    <string name="drawer_option_title" >Crop View Presets</string>
+    <string name="drawer_option_oval" >Circular</string>
+    <string name="drawer_option_rect" >Rectangular</string>
+    <string name="drawer_option_customized_overlay" >Customized Overlay</string>
+    <string name="drawer_option_title2" >Customization Toggles</string>
+    <string name="drawer_option_toggle_scale" >Image Scale: %1s</string>
+    <string name="drawer_option_toggle_shape" >Crop Shape: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >Guidelines: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >Aspect Ratio: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >Auto zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >Max zoom level: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >Set initial crop rectangle</string>
+    <string name="drawer_option_reset_crop_rect" >Reset crop rectangle to initial</string>
 
-    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Show Overlay: %1s</string>
+    <string name="drawer_option_toggle_show_overlay" >Show Overlay: %1s</string>
 
-    <string name="modo_multiple" tools:ignore="MissingTranslation">Multiple</string>
-    <string name="main_action_modo" tools:ignore="MissingTranslation">Mode</string>
-    <string name="modo_simple" tools:ignore="MissingTranslation">Simple</string>
-    <string name="resetear" tools:ignore="MissingTranslation">Reset</string>
-    <string name="b_n">B/N</string>
+    <string name="modo_multiple" >Multiple</string>
+    <string name="main_action_modo" >Mode</string>
+    <string name="modo_simple" >Simple</string>
 
 </resources>

@@ -3,7 +3,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="app_name" tools:ignore="MissingTranslation">Regadera</string>
-    <string name="app_title" tools:ignore="MissingTranslation">Regadera</string>
+
     <string name="result_image_desc" tools:ignore="MissingTranslation">결과 다듬기</string>
 
     <string name="main_drawer_load" tools:ignore="MissingTranslation">이미지 선택</string>

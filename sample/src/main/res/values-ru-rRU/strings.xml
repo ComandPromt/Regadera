@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="crop_image_menu_rotate_left">Повернуть налево</string>
-    <string name="crop_image_menu_rotate_right">Повернуть направо</string>
-    <string name="crop_image_menu_crop">Обрезать</string>
-    <string name="crop_image_menu_flip">Отразить</string>
-    <string name="crop_image_menu_flip_horizontally">Отразить по горизонтали</string>
-    <string name="crop_image_menu_flip_vertically">Отразить по вертикали</string>
-    <string name="pick_image_intent_chooser_title">Выбрать источник</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >результат обрезки</string>
+
+    <string name="main_drawer_load" tools:ignore="MissingTranslation">Загрузить изображение для обрезки</string>
+    <string name="main_drawer_open" tools:ignore="MissingTranslation">Открыть навигационный ящик</string>
+    <string name="main_drawer_close" tools:ignore="MissingTranslation">Закрыть навигационный ящик</string>
+
+    <string name="main_action_crop" tools:ignore="MissingTranslation">УРОЖАЙ</string>
+    <string name="main_action_rotate_left" tools:ignore="MissingTranslation">Левый поворот</string>
+    <string name="main_action_rotate" tools:ignore="MissingTranslation">Правый поворот</string>
+    <string name="main_action_flip" tools:ignore="MissingTranslation">кувырок</string>
+    <string name="main_action_flip_horizontally" tools:ignore="MissingTranslation">Отразить по горизонтали</string>
+    <string name="main_action_flip_vertically" tools:ignore="MissingTranslation">Отразить по вертикали</string>
+    <string name="drawer_option_title" tools:ignore="MissingTranslation">Предустановки Обрезки</string>
+    <string name="drawer_option_oval" tools:ignore="MissingTranslation">круговое</string>
+    <string name="drawer_option_rect" tools:ignore="MissingTranslation">прямоугольный</string>
+    <string name="drawer_option_customized_overlay" tools:ignore="MissingTranslation">Индивидуальное наложение</string>
+    <string name="drawer_option_title2" tools:ignore="MissingTranslation">Кастомные настройки</string>
+    <string name="drawer_option_toggle_scale" tools:ignore="MissingTranslation">Масштаб изображения: %1s</string>
+    <string name="drawer_option_toggle_shape" tools:ignore="MissingTranslation">Форма урожая: %1s</string>
+    <string name="drawer_option_toggle_guidelines" tools:ignore="MissingTranslation">Руководящие указания: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" tools:ignore="MissingTranslation">Соотношение сторон: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" tools:ignore="MissingTranslation">Авто зум: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" tools:ignore="MissingTranslation">Максимальный уровень масштабирования: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" tools:ignore="MissingTranslation">Установить начальный прямоугольник кадрирования</string>
+    <string name="drawer_option_reset_crop_rect" tools:ignore="MissingTranslation">Сброс прямоугольника обрезки до начального</string>
+
+    <string name="drawer_option_toggle_show_overlay" tools:ignore="MissingTranslation">Показать наложение: %1s</string>
+
+    <string name="modo_multiple" tools:ignore="MissingTranslation">множественный</string>
+    <string name="main_action_modo" tools:ignore="MissingTranslation">Режим</string>
+    <string name="modo_simple" tools:ignore="MissingTranslation">просто</string>
+
 </resources>

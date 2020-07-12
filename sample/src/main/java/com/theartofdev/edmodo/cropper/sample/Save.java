@@ -18,15 +18,18 @@ public class Save {
 
     private Context TheThis;
 
-    private String NameOfFolder = "/recortes";
+    private String NameOfFolder = "/Regadera/recortes";
 
     private String NameOfFile = "";
  
     public void SaveImage(Context context, Bitmap ImageToSave) {
  
         TheThis = context;
+
         String file_path = Environment.getExternalStorageDirectory().getAbsolutePath() + NameOfFolder;
+
         String CurrentDateAndTime = getCurrentDateAndTime();
+
         File dir = new File(file_path);
  
         if (!dir.exists()) {
@@ -36,6 +39,7 @@ public class Save {
         File file = new File(dir, NameOfFile + CurrentDateAndTime + ".jpg");
  
         try {
+
             FileOutputStream fOut = new FileOutputStream(file);
  
             ImageToSave.compress(Bitmap.CompressFormat.JPEG, 85, fOut);
@@ -69,10 +73,15 @@ public class Save {
     }
  
     private String getCurrentDateAndTime() {
+
         Calendar c = Calendar.getInstance();
+
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd-HH-mm-­ss");
+
         String formattedDate = df.format(c.getTime());
+
         return formattedDate;
+
     }
  
     private void UnableToSave() {
@@ -82,4 +91,5 @@ public class Save {
     private void AbleToSave() {
         Toast.makeText(TheThis, "Imagen guardada en la galería.", Toast.LENGTH_SHORT).show();
     }
+
 }

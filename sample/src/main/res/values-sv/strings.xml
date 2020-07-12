@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="crop_image_activity_title"></string>
-    <string name="crop_image_menu_rotate_left">Rotera vänster</string>
-    <string name="crop_image_menu_rotate_right">Rotera höger</string>
-    <string name="crop_image_menu_crop">Beskär</string>
-    <string name="crop_image_menu_flip">Vänd</string>
-    <string name="crop_image_menu_flip_horizontally">Vänd horisontellt</string>
-    <string name="crop_image_menu_flip_vertically">Vänd vertikalt</string>
+    <string name="app_name" translatable="false">Regadera</string>
+    <string name="result_image_desc" >grödningsresultat</string>
 
-    <string name="pick_image_intent_chooser_title">Välj bild</string>
+    <string name="main_drawer_load" >Ladda bild för beskärning</string>
+    <string name="main_drawer_open" >Öppna navigationslådan</string>
+    <string name="main_drawer_close" >Stäng navigationslådan</string>
 
-    <string name="crop_image_activity_no_permissions">Avbryter, nödvändiga behörigheter beviljas inte</string>
+    <string name="main_action_crop" >BESKÄRA</string>
+    <string name="main_action_rotate_left" >Vänster rotera</string>
+    <string name="main_action_rotate" >Höger rotera</string>
+    <string name="main_action_flip" >Flip</string>
+    <string name="main_action_flip_horizontally" >Vänd horisontellt</string>
+    <string name="main_action_flip_vertically" >Vänd vertikalt</string>
+    <string name="drawer_option_title" >Förinställningar för beskärning av beskärning</string>
+    <string name="drawer_option_oval" >Cirkulär</string>
+    <string name="drawer_option_rect" >Rektangulär</string>
+    <string name="drawer_option_customized_overlay" >Anpassad överlägg</string>
+    <string name="drawer_option_title2" >Anpassning växlar</string>
+    <string name="drawer_option_toggle_scale" >Bildskala: %1s</string>
+    <string name="drawer_option_toggle_shape" >Beskär form: %1s</string>
+    <string name="drawer_option_toggle_guidelines" >Riktlinjer: %1s</string>
+    <string name="drawer_option_toggle_aspect_ratio" >Sidförhållande: %1s</string>
+    <string name="drawer_option_toggle_auto_zoom" >Auto zoom: %1s</string>
+    <string name="drawer_option_toggle_max_zoom" >Max zoomnivå: %1s</string>
+    <string name="drawer_option_set_initial_crop_rect" >Ställ in den ursprungliga beskärningsräkten</string>
+    <string name="drawer_option_reset_crop_rect" >Återställ beskärningsrektangeln till initial</string>
+
+    <string name="drawer_option_toggle_show_overlay" >Visa överlägg: %1s</string>
+
+    <string name="modo_multiple" >Flera olika</string>
+    <string name="main_action_modo" >Läge</string>
+    <string name="modo_simple" >Enkel</string>
 
 </resources>

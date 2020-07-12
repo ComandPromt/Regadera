@@ -13,14 +13,11 @@
 package com.theartofdev.edmodo.cropper.sample;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
@@ -29,14 +26,7 @@ import android.widget.Toast;
 
 import com.example.croppersample.R;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Random;
 
 public final class CropResultActivity extends Activity {
 
@@ -46,7 +36,7 @@ public final class CropResultActivity extends Activity {
   private ImageView imageView;
 
   public static boolean multiple=false;
-  
+
     public static boolean isMultiple() {
     return multiple;
   }
@@ -54,16 +44,19 @@ public final class CropResultActivity extends Activity {
   public static void setMultiple(boolean multiple) {
     CropResultActivity.multiple = multiple;
   }
-  
-  
+
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 
     super.onCreate(savedInstanceState);
+
     requestWindowFeature(Window.FEATURE_NO_TITLE);
+
     setContentView(R.layout.activity_crop_result);
 
     imageView = ((ImageView) findViewById(R.id.resultImageView));
+
     imageView.setBackgroundResource(R.drawable.backdrop);
 
     Intent intent = getIntent();
@@ -71,6 +64,7 @@ public final class CropResultActivity extends Activity {
     if (mImage != null) {
 
       imageView.setImageBitmap(mImage);
+
       int byteCount = 0;
 
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
@@ -78,11 +72,11 @@ public final class CropResultActivity extends Activity {
       }
 
       String desc =
-          "("
+          "( "
               + mImage.getWidth()
-              + ", "
+              + " * "
               + mImage.getHeight()
-              + ") "
+              + " ) "
               + byteCount
               + "KB";
 
@@ -91,19 +85,20 @@ public final class CropResultActivity extends Activity {
         Save savefile = new Save();
         savefile.SaveImage(this, mImage);
 
-if(multiple){
+    if(multiple){
 
-    int paso=MainActivity.getPaso();
+      int paso=MainActivity.getPaso();
 
-    if(MainActivity.getListaImagenes().size()>0 && paso<MainActivity.getListaImagenes().size()) {
+      if(MainActivity.getListaImagenes().size()>0 && paso<MainActivity.getListaImagenes().size()) {
 
-      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File("/mnt/sdcard/imagenes/" +
+      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(MainActivity.directorioImagenes+"/" +
       MainActivity.listaImagenes.get(paso))));
-	  
+
       MainActivity.setPaso(++paso);
 
-   }
-}
+      }
+
+     }
 
     } else {
 
@@ -117,7 +112,9 @@ if(multiple){
         MainActivity.setPaso(MainActivity.getPaso()+1);
         Toast.makeText(this, "No image is set to show", Toast.LENGTH_LONG).show();
       }
+
     }
+
   }
 
   @Override
@@ -137,5 +134,7 @@ if(multiple){
       mImage.recycle();
       mImage = null;
     }
+
   }
+
 }
