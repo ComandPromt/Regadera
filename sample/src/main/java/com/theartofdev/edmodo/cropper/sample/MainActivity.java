@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
   public void back(MenuItem item) {
 
     try {
+
       if (paso <= 0) {
         paso = 1;
 
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
       posicion = ++paso;
 
       --paso;
+
     }
 
     catch (Exception e){
@@ -117,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
   public void next(MenuItem item) {
 
     try {
+
       if (paso >= listaImagenes.size() - 1) {
         --paso;
 
@@ -126,8 +129,6 @@ public class MainActivity extends AppCompatActivity {
               listaImagenes.get(++paso))));
 
       posicion = ++paso;
-
-
 
       --paso;
     }
@@ -334,8 +335,6 @@ public class MainActivity extends AppCompatActivity {
     if (savedInstanceState == null) {
       setMainFragmentByPreset(CropDemoPreset.RECT);
     }
-
-
 
   }
 
@@ -701,8 +700,12 @@ public class MainActivity extends AppCompatActivity {
   }
 
   public void verProgreso(MenuItem item) {
-    Toast.makeText(this, "(" + posicion + " / " + listaImagenes.size() + ")", Toast.LENGTH_SHORT)
-            .show();
+
+    if(posicion<=listaImagenes.size()){
+      Toast.makeText(this, "(" + posicion + " / " + listaImagenes.size() + ")", Toast.LENGTH_SHORT)
+              .show();
+    }
+    
   }
 
 }

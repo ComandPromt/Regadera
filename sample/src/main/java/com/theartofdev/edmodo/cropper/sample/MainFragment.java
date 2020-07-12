@@ -37,22 +37,15 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 import java.io.File;
 import java.util.LinkedList;
 
-/** The fragment that will show the Image Cropping UI by requested preset. */
 public final class MainFragment extends Fragment
         implements CropImageView.OnSetImageUriCompleteListener,
         CropImageView.OnCropImageCompleteListener {
 
-  // region: Fields and Consts
-
   private CropDemoPreset mDemoPreset;
 
   public static CropImageView mCropImageView;
-  // endregion
 
-
-  /** Returns a new instance of this fragment for the given section number. */
   public static MainFragment newInstance(CropDemoPreset demoPreset) {
-
 
     MainFragment fragment = new MainFragment();
     Bundle args = new Bundle();
@@ -61,27 +54,29 @@ public final class MainFragment extends Fragment
     return fragment;
   }
 
-  /** Set the image to show for cropping. */
-
   public void setImageUri(Uri imageUri) {
 
     mCropImageView.setImageUriAsync(imageUri);
 
-    String directorio=imageUri.toString();
+    String directorio = imageUri.toString();
 
-    directorio=directorio.substring(0,directorio.lastIndexOf("/"));
+    if(!directorio.contains("media/external/images/media")){
 
-    if(directorio.contains("external_storage")){
-      directorio="/storage/emulated/0/"+directorio.substring(directorio.indexOf("external_storage")+17,directorio.length());
+      directorio = directorio.substring(0, directorio.lastIndexOf("/"));
+
+      if (directorio.contains("external_storage")) {
+        directorio = "/storage/emulated/0/" + directorio.substring(directorio.indexOf("external_storage") + 17, directorio.length());
+      }
+
+      MainActivity.directorioImagenes = directorio;
+
+      MainActivity.conversion("jpeg", "jpg", directorio);
+
+      MainActivity.listaImagenes.clear();
+
+      MainActivity.listaImagenes = MainActivity.directorio(directorio, ".");
+
     }
-
-    MainActivity.directorioImagenes=directorio;
-
-    MainActivity.conversion("jpeg", "jpg", directorio);
-
-    MainActivity.listaImagenes.clear();
-
-    MainActivity.listaImagenes= MainActivity.directorio(directorio, ".");
 
   }
 

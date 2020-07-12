@@ -89,12 +89,44 @@ public final class CropResultActivity extends Activity {
 
       int paso=MainActivity.getPaso();
 
-      if(MainActivity.getListaImagenes().size()>0 && paso<MainActivity.getListaImagenes().size()) {
+      if(paso==MainActivity.listaImagenes.size()){
 
-      MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(MainActivity.directorioImagenes+"/" +
-      MainActivity.listaImagenes.get(paso))));
+        Toast.makeText(this, "Última foto", Toast.LENGTH_SHORT)
+                .show();
 
-      MainActivity.setPaso(++paso);
+        paso=0;
+
+        MainActivity.paso = 0;
+
+        MainActivity.posicion =1;
+
+        multiple=false;
+
+        MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(MainActivity.directorioImagenes+"/" +
+                MainActivity.listaImagenes.get(0))));
+      }
+
+      else {
+
+        MainActivity.posicion = paso;
+
+        MainActivity.posicion++;
+
+        if (MainActivity.getListaImagenes().size() > 0 && paso < MainActivity.getListaImagenes().size()) {
+
+          MainFragment.mCropImageView.setImageUriAsync(Uri.fromFile(new File(MainActivity.directorioImagenes + "/" +
+
+                  MainActivity.listaImagenes.get(paso))));
+
+          ++paso;
+
+          MainActivity.setPaso(paso);
+
+          MainActivity.posicion = paso;
+
+          MainActivity.posicion++;
+
+        }
 
       }
 
@@ -122,7 +154,6 @@ public final class CropResultActivity extends Activity {
     releaseBitmap();
     super.onBackPressed();
   }
-
 
   public void onImageViewClicked(View view) {
     releaseBitmap();
